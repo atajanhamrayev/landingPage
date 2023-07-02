@@ -1,0 +1,50 @@
+//max-width: 1280px
+@media (max-width: 1280px) {}
+
+//max-width: 1160px
+@media (max-width: 1160px) {
+    @include typography-xxl;
+    @include components-xxl;
+    @include header-xxl;
+}
+
+//max-width: 1025px
+@media (max-width: 1025px) {
+    @include body-xl;
+    @include typography-xl;
+    @include components-xl;
+}
+
+//max-width: 940px
+@media (max-width: 940px) {
+    @include typography-lg;
+    @include components-lg;
+    @include header-lg;
+    @include footer-lg;
+}
+
+//max-width: 768px
+@media (max-width: 768px) {
+    @include typography-xmd;
+    @include body-md;
+    @include header-xmd;
+    @include hero-xmd;
+}
+
+//max-width: 660px
+@media (max-width: 660px) {
+    @include components-md;
+    @include header-md;
+}
+
+//max-width: 560px
+@media (max-width: 560px) {
+    @include typography-sm;
+    @include header-sm;
+}
+
+//max-width: 460px
+@media (max-width: 460px) {
+    @include typography-xsm;
+    @include header-xsm;
+}

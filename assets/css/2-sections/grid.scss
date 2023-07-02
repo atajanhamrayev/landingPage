@@ -1,0 +1,90 @@
+.grid {
+    padding: 100px 0;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &-title {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8em;
+            align-items: center;
+            justify-content: center;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+
+            strong {
+                color: $blue;
+                font-size: 22px;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+        &-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 1.5em;
+
+            .gridItem {
+                padding: 100px 40px 40px 40px;
+                width: calc(33.3% - 15px);
+                max-width: 370px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: $white;
+                box-shadow: 0 0 8px rgba($black, 0.16);
+                min-width: 300px;
+                position: relative;
+
+
+                svg {
+                    position: absolute;
+                    
+                    &.notice{
+                        top: 0;
+                        left: 0;
+                    }
+
+                    &.decor1{
+                        left: 0;
+                        bottom: 65px;
+                    }
+
+                    &.decor2{
+                        right: 0;
+                        top: 65px;
+                    }
+                }
+
+                h5 {
+                    text-align: center;
+                    color: $blue;
+                    font-weight: 500;
+                    font-style: normal;
+                    margin-bottom: 15px;
+                }
+
+                strong {
+                    color: $blue;
+                    font-weight: 500;
+                    font-size: 1.25em;
+                    display: block;
+                    text-align: center;
+                }
+
+                span {
+                    font-size: 1.25em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+.header {
+    background-color: $black;
+    color: $white;
+    position: relative;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 0;
+        height: 110px;
+        width: 100%;
+
+        &-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: $blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-content {
+            margin-left: 150px;
+
+            p{
+                font-size: 16px;
+            }
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 30%;
+            height: 100%;
+        }
+    }
+}
+
+//max-width: 1160px
+@mixin header-xxl {
+    .header {
+        &__inner {
+            height: 90px;
+
+            &-logo {
+                width: 220px;
+                font-size: 18px;
+            }
+
+            &-content {
+                margin-left: 130px;
+            }
+
+            svg {
+                left: 25%;
+            }
+        }
+    }
+}
+
+//max-width: 940px
+@mixin header-lg {
+    .header {
+        &__inner {
+            height: 80px;
+
+            &-logo {
+                width: 180px;
+                font-size: 16px;
+            }
+
+            &-content {
+                margin-left: 120px;
+            }
+
+            svg {
+                left: 20%;
+            }
+        }
+    }
+}
+
+//max-width: 768px
+@mixin header-xmd {
+    .header {
+        &__inner {
+            &-logo {
+                font-size: 14px;
+                width: 150px;
+            }
+
+            &-content {
+                margin-left: 100px;
+            }
+
+        }
+    }
+}
+
+//max-width: 660px
+@mixin header-md {
+    .header {
+        &__inner {
+            height: 70px;
+
+            &-logo {
+                width: 140px;
+            }
+
+            &-content {
+                margin-left: 70px;
+            }
+            svg{
+                display: none;
+            }
+        }
+    }
+}
+
+//max-width: 560px
+@mixin header-sm {
+    .header {
+        &__inner {
+            height: 50px;
+
+            &-logo {
+                width: 120px;
+            }
+
+            &-content {
+                margin-left: 60px;
+            }
+        }
+    }
+}
+
+//max-width: 460px
+@mixin header-xsm {
+    .header {
+        &__inner {
+            height: 50px;
+
+            &-logo {
+                width: 100px;
+            }
+
+            &-content {
+                margin-left: 60px;
+            }
+        }
+    }
+}
